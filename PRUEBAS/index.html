@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap inner">
+      <a href="#inicio" class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <span> JOSÉ </span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto" class="btn">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid">
+        <div>
+          <span class="pill">Disponible para proyectos  <span id="status"></span></span>
+          <h1 class="title">Desarrollador BackEnd</h1>
+          <p class="subtitle">Soy <strong>José Luis</strong>, desarrollador BackEnd</p>
+          <div class="actions">
+            <a class="btn primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn" href="#contacto">Hablemos</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resumen">
+          <h3 style="margin:0 0 10px">Resumen rápido</h3>
+          <ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px">
+            <li>⚡ 2 años de estudios en senati</li>
+            <li>🧩 </li>
+            <li>✅ </li>
+            <li>🌎 Español / Inglés</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2 class="section-title">Proyectos destacados</h2>
+      <p class="muted">Una selección de </p>
+      <div class="projects">
+        <!-- Tarjeta 1 -->
+        <article class="card">
+          <div class="thumb">
+            <img src=""alt="" style="width: 150px;">
+          </div>
+          <div class="card-body">
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px">
+              <h3 style="margin:0">Inventario Web</h3>
+              <span class="tag">PHP • MySQL</span>
+            </div>
+            <p class="muted">Sistema </p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+        <!-- Tarjeta 2 -->
+        <article class="card">
+          <div class="thumb">
+            <img src=""alt="" style="width: 150px;">
+          </div>
+          <div class="card-body">
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px">
+              <h3 style="margin:0">Reservas </h3>
+              <span class="tag">JS • PHP</span>
+            </div>
+            <p class="muted">Módulo de</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+        <!-- Tarjeta 3 -->
+        <article class="card">
+          <div class="thumb">
+            <img src=""alt="" style="width: 150px;">
+          </div>
+          <div class="card-body">
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px">
+              <h3 style="margin:0">Ventas </h3>
+              <span class="tag">MySQL </span>
+            </div>
+            <p class="muted">Flujo de ven</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills">
+        <div class="chip">HTML5</div>
+      
+      </div>
+      <div style="margin-top:18px; display:grid; gap:12px">
+        <div>
+          <div style="display:flex; justify-content:space-between"><span>Front‑End</span><span class="muted">85%</span></div>
+          <div class="progress"><div class="bar" style="width:85%"></div></div>
+        </div>
+        <div>
+          <div style="display:flex; justify-content:space-between"><span>Back‑End</span><span class="muted">70%</span></div>
+          <div class="progress"><div class="bar" style="width:70%"></div></div>
+        </div>
+        <div>
+          <div style="display:flex; justify-content:space-between"><span>Base de datos</span><span class="muted">80%</span></div>
+          <div class="progress"><div class="bar" style="width:80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia">
+      <h2 class="section-title">Experiencia</h2>
+      <div class="timeline">
+        <div class="item">
+          <span class="dot" aria-hidden="true"></span>
+          <strong>Desarrollad</strong> · Empresa
+          <p class="muted" style="margin:.4rem 0 0">Desarrollo </p>
+        </div>
+        <div class="item">
+          <span class="dot" aria-hidden="true"></span>
+          <strong></strong> 
+          <p class="muted" style="margin:.4rem 0 0"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2 class="section-title">Contacto</h2>
+      <p class="muted">¿Tienes una idea o vacante? Envíame un mensaje y te respondo pronto.</p>
+      <form onsubmit="handleSend(event)">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+          <input required name="nombre" placeholder="Tu nombre" />
+          <input required type="email" name="email" placeholder="Tu email" />
+        </div>
+        <input name="asunto" placeholder="Asunto" />
+        <textarea required name="mensaje" placeholder="Cuéntame sobre tu proyecto o rol"></textarea>
+        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+          <button class="btn primary" type="submit">Enviar mensaje</button>
+          <span id="msg" class="muted" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap">
+      <small>© <span id="year"></span> 2025. Todos los derechos reservados.</small>
+      <div style="display:flex; gap:10px">
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a class="btn" href="chavezpaezjoseluis29@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
